@@ -14,7 +14,7 @@ The clean filter is `sed` with a delete pattern and the smudge is just `cat` aka
 Test the filter on the `filter_test.sh` file!
 
 Alternatives are removing the PIN `sudo mbimcli -d <Device> --disable-pin=<(Pin Type),(Current PIN)>`.
-For the PIN Type check `sudo mbimcli -d <Device> --query-pin-list`.
-The typical threat model of a notebook ist that it gets lost and since my drive is encrypted it is okay for me to store it on the drive.
+For the PIN Type check `sudo mbimcli -d <Device> --query-pin-list`.\
+But the typical threat model of a notebook ist that it gets lost and since my (and hopefully yours too) drive is encrypted it is okay for me to store it on the drive in cleartext.\
 An other solution ist the unlocking at start and use `mbimcli --query-pin-state` and `mbimcli --enter-pin` to check if the device is locked and ask in a prompt or a pinentry for the PIN.
 
